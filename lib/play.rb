@@ -36,3 +36,8 @@ def turn(board)
 end
 
 # Define your play method below
+def play(board)
+counter = 0
+counter += 1
+turn(board) until counter >=9
+end
