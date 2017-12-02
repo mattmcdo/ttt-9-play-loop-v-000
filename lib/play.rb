@@ -37,13 +37,9 @@ end
 
 # Define your play method below
 def play(board)
-  turns = 3
   counter = 0
-  loop do
-    counter = counter + 1
+  until counter == 9
     turn(board)
-    if counter >= turns
-      puts "You only get #{turns} turns baby!"
-    end
-  end
+    counter += 1
+end
 end
